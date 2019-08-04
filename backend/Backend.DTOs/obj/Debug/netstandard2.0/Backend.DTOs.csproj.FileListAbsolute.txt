@@ -1,0 +1,12 @@
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\Backend.DTOs.deps.json
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\Backend.DTOs.dll
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\Backend.DTOs.pdb
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.csproj.CoreCompileInputs.cache
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.AssemblyInfoInputs.cache
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.AssemblyInfo.cs
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.csproj.CopyComplete
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.dll
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.pdb
+F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.csprojAssemblyReference.cache

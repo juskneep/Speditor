@@ -1,0 +1,24 @@
+<form #form="ngForm" class="col-md-5" autocomplete="off" (submit)="onSubmit(form)">
+    <div class="form-group">
+        <label for="Email">Email address</label>
+        <input #Email="ngModel" [(ngModel)]="formModel.Email" type="email" class="form-control" id="Email"
+            aria-describedby="emailHelp" placeholder="Email" name="Email">
+    </div>
+    <div class="form-group">
+        <label for="Password">Password</label>
+        <input #Password="ngModel" [(ngModel)]="formModel.Password " type="password" class="form-control" id="Password"
+            placeholder="Password" name="Password">
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <div class="form-group form-check-label">
+        <small>You don't have an account? <a href="/users/register">Sign Up</a></small>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-8 offset-md-2">
+            <button type="submit" class="btn btn-lg btn-block">Sign In</button>
+        </div>
+    </div>
+</form>

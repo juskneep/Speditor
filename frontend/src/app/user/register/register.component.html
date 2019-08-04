@@ -1,0 +1,37 @@
+<form [formGroup]="userService.formModel" class="col-md-5" autocomplete="off" (submit)="onSubmit()">
+    <div class="form-group">
+        <label for="UserName">Username</label>
+        <input type="text" class="form-control" id="UserName" placeholder="Username" formControlName="UserName">
+    </div>
+    <div class="form-group">
+        <label for="FirstName">FirstName</label>
+        <input type="text" class="form-control" id="FirstName" placeholder="Firstname" formControlName="FirstName">
+    </div>
+    <div class="form-group">
+        <label for="LastName">LastName</label>
+        <input type="text" class="form-control" id="LastName" placeholder="LastName" formControlName="LastName">
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" placeholder="Email" formControlName="Email">
+    </div>
+    <div class="form-group">
+        <label for="Company">Company</label>
+        <input type="text" class="form-control" id="Company" placeholder="Company" formControlName="Company">
+    </div>
+    <div formGroupName="Passwords">
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" id="Password" placeholder="Password" formControlName="Password">
+        </div>
+        <div class="form-group">
+            <label for="ConfirmPassword">ConfirmPassword</label>
+            <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" formControlName="ConfirmPassword">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-8 offset-md-2">
+            <button type="submit" class="btn btn-lg btn-block" [disabled]="!userService.formModel.valid">Register</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,16 @@
+F:\ASP-NET-Project\Project2\backend\Backend.Services\bin\Debug\netstandard2.0\Backend.Services.deps.json
+F:\ASP-NET-Project\Project2\backend\Backend.Services\bin\Debug\netstandard2.0\Backend.Services.dll
+F:\ASP-NET-Project\Project2\backend\Backend.Services\obj\Debug\netstandard2.0\Backend.Services.csprojAssemblyReference.cache
+F:\ASP-NET-Project\Project2\backend\Backend.Services\obj\Debug\netstandard2.0\Backend.Services.csproj.CoreCompileInputs.cache
+F:\ASP-NET-Project\Project2\backend\Backend.Services\obj\Debug\netstandard2.0\Backend.Services.AssemblyInfoInputs.cache
+F:\ASP-NET-Project\Project2\backend\Backend.Services\obj\Debug\netstandard2.0\Backend.Services.AssemblyInfo.cs
+F:\ASP-NET-Project\Project2\backend\Backend.Services\bin\Debug\netstandard2.0\Backend.Data.dll
+F:\ASP-NET-Project\Project2\backend\Backend.Services\bin\Debug\netstandard2.0\Backend.Models.dll
+F:\ASP-NET-Project\Project2\backend\Backend.Services\bin\Debug\netstandard2.0\Backend.Services.pdb
+F:\ASP-NET-Project\Project2\backend\Backend.Services\bin\Debug\netstandard2.0\Backend.DTOs.dll
+F:\ASP-NET-Project\Project2\backend\Backend.Services\bin\Debug\netstandard2.0\Backend.Data.pdb
+F:\ASP-NET-Project\Project2\backend\Backend.Services\bin\Debug\netstandard2.0\Backend.DTOs.pdb
+F:\ASP-NET-Project\Project2\backend\Backend.Services\bin\Debug\netstandard2.0\Backend.Models.pdb
+F:\ASP-NET-Project\Project2\backend\Backend.Services\obj\Debug\netstandard2.0\Backend.Services.csproj.CopyComplete
+F:\ASP-NET-Project\Project2\backend\Backend.Services\obj\Debug\netstandard2.0\Backend.Services.dll
+F:\ASP-NET-Project\Project2\backend\Backend.Services\obj\Debug\netstandard2.0\Backend.Services.pdb

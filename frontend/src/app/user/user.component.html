@@ -1,0 +1,23 @@
+<!--<div class="wrapper">
+        <div class="wrapped-div">
+            <div class="tab-header">
+                <h2 routerLink='/user/login' routerLinkActive='active'>Sign In</h2>
+                <h2 routerLink='/user/registration' routerLinkActive='active'>Sign Up</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+<div class="col-md-10 offset-md-4">
+    <h1 class="offset-lg-1 display-4">
+        <a href="/users/login"><span style="">Login</span></a>
+        /
+        <a href="/users/register"><span style="">Register</span></a>
+    </h1>
+    <hr class="mr-10"/>
+    <router-outlet></router-outlet>
+</div>
