@@ -22,7 +22,7 @@ namespace Backend.Models
         public virtual Forum Forum { get; set; }
         public string ForumId { get; set; }
 
-        public virtual IEnumerable<PostReply> Replies { get; set; }
+        public virtual IEnumerable<PostReply> Replies { get; set; } 
 
     }
 }

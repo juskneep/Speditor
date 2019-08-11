@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { ForumComponent } from './forum/forum.component';
 import { AuthGuard } from './guard/auth.guard';
-import { RandomGuard } from './guard/random.guard';
 
 
 const routes: Routes = [

@@ -10,3 +10,15 @@ F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backen
 F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.dll
 F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.pdb
 F:\ASP-NET-Project\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.csprojAssemblyReference.cache
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\Backend.DTOs.deps.json
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\Backend.DTOs.dll
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\Backend.DTOs.pdb
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.csprojAssemblyReference.cache
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.csproj.CoreCompileInputs.cache
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.AssemblyInfoInputs.cache
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.AssemblyInfo.cs
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.csproj.CopyComplete
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.dll
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netstandard2.0\Backend.DTOs.pdb
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\Backend.Models.dll
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netstandard2.0\Backend.Models.pdb

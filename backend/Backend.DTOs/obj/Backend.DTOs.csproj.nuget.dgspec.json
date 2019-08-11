@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ASP-NET-Project\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj": {}
+    "F:\\Speditor\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj": {}
   },
   "projects": {
-    "F:\\ASP-NET-Project\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj": {
+    "F:\\Speditor\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ASP-NET-Project\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj",
+        "projectUniqueName": "F:\\Speditor\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj",
         "projectName": "Backend.DTOs",
-        "projectPath": "F:\\ASP-NET-Project\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj",
+        "projectPath": "F:\\Speditor\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj",
         "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-        "outputPath": "F:\\ASP-NET-Project\\Project2\\backend\\Backend.DTOs\\obj\\",
+        "outputPath": "F:\\Speditor\\Project2\\backend\\Backend.DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,14 +21,70 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "F:\\Speditor\\Project2\\backend\\Backend.Models\\Backend.Models.csproj": {
+                "projectPath": "F:\\Speditor\\Project2\\backend\\Backend.Models\\Backend.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "F:\\Speditor\\Project2\\backend\\Backend.Models\\Backend.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Speditor\\Project2\\backend\\Backend.Models\\Backend.Models.csproj",
+        "projectName": "Backend.Models",
+        "projectPath": "F:\\Speditor\\Project2\\backend\\Backend.Models\\Backend.Models.csproj",
+        "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
+        "outputPath": "F:\\Speditor\\Project2\\backend\\Backend.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -39,12 +95,20 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netcoreapp2.2": {
           "dependencies": {
-            "NETStandard.Library": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.0.3, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             }
           },

@@ -1,0 +1,8 @@
+F:\Speditor\Project2\backend\Backend.Models\bin\Debug\netcoreapp2.2\Backend.Models.deps.json
+F:\Speditor\Project2\backend\Backend.Models\bin\Debug\netcoreapp2.2\Backend.Models.dll
+F:\Speditor\Project2\backend\Backend.Models\bin\Debug\netcoreapp2.2\Backend.Models.pdb
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netcoreapp2.2\Backend.Models.csproj.CoreCompileInputs.cache
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netcoreapp2.2\Backend.Models.AssemblyInfoInputs.cache
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netcoreapp2.2\Backend.Models.AssemblyInfo.cs
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netcoreapp2.2\Backend.Models.dll
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netcoreapp2.2\Backend.Models.pdb

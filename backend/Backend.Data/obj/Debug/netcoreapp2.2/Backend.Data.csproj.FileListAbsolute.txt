@@ -1,0 +1,14 @@
+F:\Speditor\Project2\backend\Backend.Data\obj\Debug\netcoreapp2.2\Backend.Data.csprojAssemblyReference.cache
+F:\Speditor\Project2\backend\Backend.Data\obj\Debug\netcoreapp2.2\Backend.Data.csproj.CoreCompileInputs.cache
+F:\Speditor\Project2\backend\Backend.Data\obj\Debug\netcoreapp2.2\Backend.Data.AssemblyInfoInputs.cache
+F:\Speditor\Project2\backend\Backend.Data\obj\Debug\netcoreapp2.2\Backend.Data.AssemblyInfo.cs
+F:\Speditor\Project2\backend\Backend.Data\bin\Debug\netcoreapp2.2\Backend.Data.deps.json
+F:\Speditor\Project2\backend\Backend.Data\bin\Debug\netcoreapp2.2\Backend.Data.dll
+F:\Speditor\Project2\backend\Backend.Data\bin\Debug\netcoreapp2.2\Backend.Data.pdb
+F:\Speditor\Project2\backend\Backend.Data\bin\Debug\netcoreapp2.2\Backend.Models.dll
+F:\Speditor\Project2\backend\Backend.Data\bin\Debug\netcoreapp2.2\Backend.Models.pdb
+F:\Speditor\Project2\backend\Backend.Data\obj\Debug\netcoreapp2.2\Backend.Data.csproj.CopyComplete
+F:\Speditor\Project2\backend\Backend.Data\obj\Debug\netcoreapp2.2\Backend.Data.dll
+F:\Speditor\Project2\backend\Backend.Data\obj\Debug\netcoreapp2.2\Backend.Data.pdb
+F:\Speditor\Project2\backend\Backend.Data\bin\Debug\netcoreapp2.2\Backend.Data.runtimeconfig.json
+F:\Speditor\Project2\backend\Backend.Data\bin\Debug\netcoreapp2.2\Backend.Data.runtimeconfig.dev.json

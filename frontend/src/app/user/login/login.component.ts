@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   onSubmit(form: NgForm) {
     this.userService.login(form.value).subscribe(
       (res: any) => {
-        console.log(`Your auth token: ${res}`);
+        console.log(`Your session: ${res}`);
 
       },
       (err) => {

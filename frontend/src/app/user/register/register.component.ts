@@ -26,6 +26,7 @@ export class RegisterComponent implements OnInit {
       (res: any) => {
         if (res.suceeded) {
           this.userService.formModel.reset();
+          console.log(res);
           this.router.navigate(['/login']);
         } else {
           res.errors.forEach(element => {

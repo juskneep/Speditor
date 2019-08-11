@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.WebApi", "backend\Backend.WebApi.csproj", "{F8EEDAB2-CCC0-46EA-B643-40E18DD03265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backend.WebApi", "backend\Backend.WebApi.csproj", "{F8EEDAB2-CCC0-46EA-B643-40E18DD03265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Models", "Backend.Models\Backend.Models.csproj", "{62545ECF-998A-4C48-9FC7-1D5C2423AAB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backend.Models", "Backend.Models\Backend.Models.csproj", "{62545ECF-998A-4C48-9FC7-1D5C2423AAB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Services", "Backend.Services\Backend.Services.csproj", "{474B0E7F-9BCA-4988-BE29-5C15CCE45995}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backend.Services", "Backend.Services\Backend.Services.csproj", "{474B0E7F-9BCA-4988-BE29-5C15CCE45995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.DTOs", "Backend.DTOs\Backend.DTOs.csproj", "{3E4FA4B0-7A5F-4837-9414-E9590B333EE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backend.DTOs", "Backend.DTOs\Backend.DTOs.csproj", "{3E4FA4B0-7A5F-4837-9414-E9590B333EE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Data", "Backend.Data\Backend.Data.csproj", "{AA43B680-48EC-4D6A-BDC2-1C0A7355C821}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Data", "Backend.Data\Backend.Data.csproj", "{F236FC92-DA33-46FD-A0CF-DC134362C411}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{3E4FA4B0-7A5F-4837-9414-E9590B333EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E4FA4B0-7A5F-4837-9414-E9590B333EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E4FA4B0-7A5F-4837-9414-E9590B333EE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA43B680-48EC-4D6A-BDC2-1C0A7355C821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA43B680-48EC-4D6A-BDC2-1C0A7355C821}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA43B680-48EC-4D6A-BDC2-1C0A7355C821}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA43B680-48EC-4D6A-BDC2-1C0A7355C821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F236FC92-DA33-46FD-A0CF-DC134362C411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F236FC92-DA33-46FD-A0CF-DC134362C411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F236FC92-DA33-46FD-A0CF-DC134362C411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F236FC92-DA33-46FD-A0CF-DC134362C411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

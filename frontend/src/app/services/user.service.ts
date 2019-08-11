@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { NgForm, Validators, FormBuilder, FormGroup, NgModel, FormControl } from '@angular/forms';
 import { Observable, of } from 'rxjs';
 import { mapTo, tap, catchError } from 'rxjs/operators';
-import { Token } from '../guard/Token';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -27,7 +26,6 @@ export class UserService {
   baseUrl = 'https://localhost:44345/api/users';
 
 
-  private readonly JWT_TOKEN = 'JWT_TOKEN';
   private loggedUser: string;
 
   constructor(private http: HttpClient, private router: Router, private formBuilder: FormBuilder) { }
@@ -47,7 +45,7 @@ export class UserService {
 
   login(form): Observable<boolean> {
     return this.http.post<any>(`${this.baseUrl}/login`, form).pipe(
-      tap(token => this.doLoginUser(form.Email, token.token))
+      tap(session => this.doLoginUser(form.Email, session))
     );
   }
 
@@ -58,14 +56,18 @@ export class UserService {
     localStorage.setItem('expires_at', JSON.stringify(expiresAt.valueOf()) );
     } */
 
-  doLoginUser(email: string, token: string): void {
-    console.log(token);
+  doLoginUser(email: string, session: string): void {
+    console.log(session);
     this.loggedUser = email;
-    this.storeJwtToken(token);
+    this.addSession(session);
+  }
+
+  addSession(session) {
+    localStorage.setItem('session', session);
   }
 
   logout() {
-    return this.http.post<any>(`${this.baseUrl}/logout`, this.getJwtToken()).pipe(
+    return this.http.post<any>(`${this.baseUrl}/logout`, this.getSession()).pipe(
       tap(() => this.doLogoutUser()),
       mapTo(true),
       catchError(error => {
@@ -85,26 +87,14 @@ export class UserService {
   }
 
   isLoggedIn() {
-    return !!this.getJwtToken();
+    return !!this.getSession();
   }
 
-  getJwtToken() {
-    return localStorage.getItem(this.JWT_TOKEN);
+  getSession() {
+    return localStorage.getItem('session');
   }
 
   private doLogoutUser() {
     this.loggedUser = null;
-    this.removeTokens();
-  }
-
-  private storeJwtToken(jwt: string) {
-    localStorage.setItem(this.JWT_TOKEN, jwt);
-    const decodedToken = this.decode(jwt);
-    localStorage.setItem('userId', decodedToken.payload.userid);
-    localStorage.setItem('expireDate', decodedToken.payload.exp);
-  }
-
-  private removeTokens() {
-    localStorage.removeItem(this.JWT_TOKEN);
   }
 }

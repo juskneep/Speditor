@@ -1763,11 +1763,11 @@
       "Microsoft.EntityFrameworkCore.Analyzers/2.2.6": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Design/2.2.0": {
+      "Microsoft.EntityFrameworkCore.Design/2.2.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Microsoft.EntityFrameworkCore.Relational": "2.2.0"
+          "Microsoft.EntityFrameworkCore.Relational": "2.2.6"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
@@ -4604,11 +4604,11 @@
       },
       "Backend.Data/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "Backend.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
-          "Microsoft.EntityFrameworkCore.Relational": "2.2.6",
+          "Microsoft.EntityFrameworkCore.Design": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6"
         },
         "compile": {
@@ -4620,7 +4620,10 @@
       },
       "Backend.DTOs/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Backend.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Backend.DTOs.dll": {}
         },
@@ -4630,7 +4633,11 @@
       },
       "Backend.Models/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0"
+        },
         "compile": {
           "bin/placeholder/Backend.Models.dll": {}
         },
@@ -4640,11 +4647,13 @@
       },
       "Backend.Services/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "AutoMapper": "8.1.1",
           "Backend.DTOs": "1.0.0",
           "Backend.Data": "1.0.0",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
           "Microsoft.IdentityModel.Tokens": "5.5.0",
           "System.IdentityModel.Tokens.Jwt": "5.5.0"
         },
@@ -6202,10 +6211,10 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/2.2.0": {
-      "sha512": "aAyZDx6RcanRXJGVRfstJ8cgeH+orugUyMKIuTJqHgXYyvSgzsCfzlXCuyN2XeACwfK2CBEYCAn7y1zW4I+6tQ==",
+    "Microsoft.EntityFrameworkCore.Design/2.2.6": {
+      "sha512": "ouDKXTXY+ItF+PAK/jkp+Cp6Ve8Pd9sblyqOErjaiK7CzeN28peFsv3NfDeoqTAXXCCKEyuv/iXYtLs4r3wI0w==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/2.2.0",
+      "path": "microsoft.entityframeworkcore.design/2.2.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6215,7 +6224,7 @@
         "lib/net461/Microsoft.EntityFrameworkCore.Design.xml",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.2.2.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.2.2.6.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
@@ -12575,6 +12584,8 @@
       "Backend.Data >= 1.0.0",
       "Backend.Services >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
+      "Microsoft.AspNetCore.Identity >= 2.2.0",
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
@@ -12588,11 +12599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ASP-NET-Project\\Project2\\backend\\backend\\Backend.WebApi.csproj",
+      "projectUniqueName": "F:\\Speditor\\Project2\\backend\\backend\\Backend.WebApi.csproj",
       "projectName": "Backend.WebApi",
-      "projectPath": "F:\\ASP-NET-Project\\Project2\\backend\\backend\\Backend.WebApi.csproj",
+      "projectPath": "F:\\Speditor\\Project2\\backend\\backend\\Backend.WebApi.csproj",
       "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-      "outputPath": "F:\\ASP-NET-Project\\Project2\\backend\\backend\\obj\\",
+      "outputPath": "F:\\Speditor\\Project2\\backend\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12611,14 +12622,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "F:\\ASP-NET-Project\\Project2\\backend\\Backend.Data\\Backend.Data.csproj": {
-              "projectPath": "F:\\ASP-NET-Project\\Project2\\backend\\Backend.Data\\Backend.Data.csproj"
+            "F:\\Speditor\\Project2\\backend\\Backend.Data\\Backend.Data.csproj": {
+              "projectPath": "F:\\Speditor\\Project2\\backend\\Backend.Data\\Backend.Data.csproj"
             },
-            "F:\\ASP-NET-Project\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj": {
-              "projectPath": "F:\\ASP-NET-Project\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj"
+            "F:\\Speditor\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj": {
+              "projectPath": "F:\\Speditor\\Project2\\backend\\Backend.DTOs\\Backend.DTOs.csproj"
             },
-            "F:\\ASP-NET-Project\\Project2\\backend\\Backend.Services\\Backend.Services.csproj": {
-              "projectPath": "F:\\ASP-NET-Project\\Project2\\backend\\Backend.Services\\Backend.Services.csproj"
+            "F:\\Speditor\\Project2\\backend\\Backend.Services\\Backend.Services.csproj": {
+              "projectPath": "F:\\Speditor\\Project2\\backend\\Backend.Services\\Backend.Services.csproj"
             }
           }
         }
@@ -12645,6 +12656,14 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.Identity": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",

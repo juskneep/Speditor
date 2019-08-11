@@ -1,0 +1,12 @@
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netcoreapp2.2\Backend.DTOs.deps.json
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netcoreapp2.2\Backend.DTOs.dll
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netcoreapp2.2\Backend.DTOs.pdb
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netcoreapp2.2\Backend.Models.dll
+F:\Speditor\Project2\backend\Backend.DTOs\bin\Debug\netcoreapp2.2\Backend.Models.pdb
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netcoreapp2.2\Backend.DTOs.csprojAssemblyReference.cache
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netcoreapp2.2\Backend.DTOs.csproj.CoreCompileInputs.cache
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netcoreapp2.2\Backend.DTOs.AssemblyInfoInputs.cache
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netcoreapp2.2\Backend.DTOs.AssemblyInfo.cs
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netcoreapp2.2\Backend.DTOs.csproj.CopyComplete
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netcoreapp2.2\Backend.DTOs.dll
+F:\Speditor\Project2\backend\Backend.DTOs\obj\Debug\netcoreapp2.2\Backend.DTOs.pdb

@@ -10,3 +10,12 @@ F:\ASP-NET-Project\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Back
 F:\ASP-NET-Project\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Backend.Models.dll
 F:\ASP-NET-Project\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Backend.Models.pdb
 F:\ASP-NET-Project\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Backend.Models.csprojAssemblyReference.cache
+F:\Speditor\Project2\backend\Backend.Models\bin\Debug\netstandard2.0\Backend.Models.deps.json
+F:\Speditor\Project2\backend\Backend.Models\bin\Debug\netstandard2.0\Backend.Models.dll
+F:\Speditor\Project2\backend\Backend.Models\bin\Debug\netstandard2.0\Backend.Models.pdb
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Backend.Models.csproj.CoreCompileInputs.cache
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Backend.Models.AssemblyInfoInputs.cache
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Backend.Models.AssemblyInfo.cs
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Backend.Models.dll
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Backend.Models.pdb
+F:\Speditor\Project2\backend\Backend.Models\obj\Debug\netstandard2.0\Backend.Models.csprojAssemblyReference.cache

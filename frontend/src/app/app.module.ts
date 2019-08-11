@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { ForumComponent } from './forum/forum.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ForumModel } from './forum/models/ForumModel';
+import { PostModel } from './forum/models/PostModel';
+import { PostReply } from './forum/models/PostReply';
 
 @NgModule({
   declarations: [
