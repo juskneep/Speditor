@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { ForumModel } from '../../components/forum/models/ForumModel';
 import { FormBuilder, Validators } from '@angular/forms';
-import { ForumModel } from '../components/forum/models/ForumModel';
 
 @Injectable({
   providedIn: 'root'

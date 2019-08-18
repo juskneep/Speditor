@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ForumModel } from './models/ForumModel';
-import { ForumService } from '../services/forum.service';
+import { ForumService } from '../../core/services/forum.service';
 
 @Component({
   selector: 'app-forum',

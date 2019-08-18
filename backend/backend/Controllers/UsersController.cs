@@ -87,7 +87,7 @@ namespace Backend.WebApi.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<object> LoginUser(UserLoginDTO model)
+        public object LoginUser(UserLoginDTO model)
         {
             var user =  this._userManager.Users.SingleOrDefault(u => u.Email == model.Email);
             if (user == null)
