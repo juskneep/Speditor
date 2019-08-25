@@ -23,14 +23,14 @@ namespace Backend.WebApi.Controllers
             this._postReplyService = postReplyService;
         }
 
-        [HttpGet("/post/postReplies")]
+        [HttpGet("{postId}")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IEnumerable<PostReplyViewModel>> GetPostRepliesByPostId(string postId)
         {
             return await this._postReplyService.GetPostReplyForGivenPostId(postId);
         }
 
-        [HttpGet]
+        [HttpGet("/user/{userId}")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IEnumerable<PostReplyViewModel>> GetPostRepliesByUserId(string userId)
         {

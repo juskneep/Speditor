@@ -24,14 +24,14 @@ namespace Backend.WebApi.Controllers
         }
 
 
-        [HttpGet("forum/all")]
+        [HttpGet("/forum/{forumId}")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IEnumerable<PostViewModel>> GetAllPostsByForum(string forumId)
         {
             return await this._postService.GetAllPostsForForum(forumId);
         }
 
-        [HttpGet("users/all")]
+        [HttpGet("users/{userId}")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IEnumerable<PostViewModel>> GetAllPostsByUser(string userId)
         {

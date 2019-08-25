@@ -37,6 +37,7 @@ namespace Backend.WebApi.Controllers
 
         }
 
+        [HttpGet("{id}")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public ForumViewModel GetForum(string id)
         {
