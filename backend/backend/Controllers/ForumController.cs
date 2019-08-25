@@ -46,9 +46,9 @@ namespace Backend.WebApi.Controllers
 
         [HttpPost("create")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public IActionResult CreateForumTheme(ForumDTO forumDTO)
+        public async Task<IActionResult> CreateForumTheme(ForumDTO forumDTO)
         {
-            var forum = _forumService.CreateForumTheme(forumDTO);
+            var forum = await _forumService.CreateForumTheme(forumDTO);
 
             if (forum == null)
             {

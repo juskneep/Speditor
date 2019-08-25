@@ -17,19 +17,42 @@ namespace Backend.WebApi.Controllers
     public class PostsController : ControllerBase
     {
         private readonly IPostService _postService;
-        private readonly IMapper _mapper;
 
-        public PostsController(IPostService postService, IMapper mapper)
+        public PostsController(IPostService postService)
         {
             this._postService = postService;
-            this._mapper = mapper;
         }
 
-        [HttpGet("")]
+
+        [HttpGet("forum/all")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public Task<ActionResult<PostViewModel>> CreatePost(PostDTO model)
+        public async Task<IEnumerable<PostViewModel>> GetAllPostsByForum(string forumId)
         {
-            var post = _mapper.Map<>
+            return await this._postService.GetAllPostsForForum(forumId);
+        }
+
+        [HttpGet("users/all")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<IEnumerable<PostViewModel>> GetAllPostsByUser(string userId)
+        {
+            return await this._postService.GetAllPostsForUser(userId);
+        }
+
+
+        [HttpPost("create")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<IActionResult> CreatePost(PostDTO model)
+        {
+            var result = await this._postService.CreatePost(model);
+
+            if (result == null)
+            {
+                return BadRequest("Something went wrong :(");
+            }
+            else
+            {
+                return Ok("The forum theme was created!");
+            }
         }
 
     }
