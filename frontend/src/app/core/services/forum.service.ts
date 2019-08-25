@@ -17,12 +17,12 @@ export class ForumService {
   });
 
   baseUrl = 'https://localhost:44345/api';
-  token = localStorage.getItem('JWT_TOKEN');
+  token = localStorage.getItem('authtoken');
 
   constructor(private http: HttpClient, private formBuilder: FormBuilder) { }
 
   async getAllPosts() {
-    return await this.http.get<ForumModel[]>(`${this.baseUrl}/forum`);
+    return await this.http.get<ForumModel[]>(`${this.baseUrl}/forum`).toPromise();
   }
 
   createPost() {
@@ -32,7 +32,7 @@ export class ForumService {
       Created: this.formModel.value.Created,
       ImageUrl: this.formModel.value.ImageUrl
     };
-    const header = new HttpHeaders().set('Content-Type', 'application/json').set('Authorization', 'Bearer ' + this.token);
-    return this.http.post<ForumModel>(`${this.baseUrl}/forum/create`, body, { headers: header });
+    /*const header = new HttpHeaders().set('Content-Type', 'application/json').set('Authorization', 'Bearer ' + this.token);*/
+    return this.http.post<ForumModel>(`${this.baseUrl}/forum/create`, body);
   }
 }

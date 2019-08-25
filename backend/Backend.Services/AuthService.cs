@@ -56,10 +56,9 @@ namespace Backend.Services
                                 .GetAwaiter()
                                 .GetResult() ? "Administrator" : "User")
                     }),
-                //Expires = DateTime.Now.AddSeconds(45),
+                Expires = DateTime.Now.AddDays(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
-            tokenDescriptor.Expires = DateTime.UtcNow.AddSeconds(45);
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);

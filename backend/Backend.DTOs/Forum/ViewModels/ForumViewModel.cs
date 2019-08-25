@@ -12,6 +12,6 @@ namespace Backend.DTOs
         public string Description { get; set; }
         public DateTime Created { get; set; }
         public string ImageUrl { get; set; }
-        public virtual IEnumerable<Post> Posts { get; set; }
+        public virtual IEnumerable<PostViewModel> Posts { get; set; }
     }
 }

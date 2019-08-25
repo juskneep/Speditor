@@ -26,7 +26,7 @@ namespace Backend.Services
         public IEnumerable<Forum> GetAllForumThemes()
         {
             return this._context.Forums
-                .Include(x => x.Posts);
+                .Include(p => p.Posts);
         }
 
         public ForumViewModel GetForumThemeById(string id)

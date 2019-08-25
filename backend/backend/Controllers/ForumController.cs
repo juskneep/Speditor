@@ -18,12 +18,10 @@ namespace Backend.WebApi.Controllers
     [ApiController]
     public class ForumController : ControllerBase
     {
-        private readonly HttpClient _httpClient;
         private readonly IForumService _forumService;
         private readonly IMapper _mapper;
-        public ForumController(HttpClient httpClient, IForumService forumService, IMapper mapper)
+        public ForumController(IForumService forumService, IMapper mapper)
         {
-            this._httpClient = httpClient;
             this._forumService = forumService;
             this._mapper = mapper;
         }

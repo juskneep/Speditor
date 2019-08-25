@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Validators, NgForm, FormGroup } from '@angular/forms';
 import { UserService } from 'src/app/core/services/user.service';
 import { AuthService } from 'src/app/core/services/auth.service';
+import { Toast, ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,11 +15,13 @@ export class LoginComponent implements OnInit {
   formModel = {
     Email: '',
     Password: ''
-  }
+  };
 
   constructor(
     private userService: UserService,
-    private authService: AuthService
+    private authService: AuthService,
+    private toastr: ToastrService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -26,9 +30,9 @@ export class LoginComponent implements OnInit {
   onSubmit(form: NgForm) {
     this.authService.login(form.value).subscribe(
       (res: any) => {
-        console.log(res); 
         localStorage.setItem('authtoken', res.token);
-        console.log(localStorage.getItem('authtoken'));
+        this.toastr.success('Login Successful');
+        this.router.navigate(['/']);
       },
       (err) => {
         console.log(err);

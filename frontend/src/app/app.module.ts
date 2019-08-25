@@ -8,13 +8,14 @@ import { LoginComponent } from './components/user/login/login.component';
 import { RegisterComponent } from './components/user/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { ForumComponent } from './components/forum/forum.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
 import { ToastrModule } from 'ngx-toastr';
+import { JwtInterceptor } from './core/helpers/jwt-interceptor';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,13 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule,
     ToastrModule.forRoot()
   ],
-  providers: [],
+  providers: [ 
+    {
+    provide : HTTP_INTERCEPTORS,
+    useClass: JwtInterceptor,
+    multi   : true,
+  },
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

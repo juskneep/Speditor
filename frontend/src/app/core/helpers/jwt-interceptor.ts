@@ -6,7 +6,7 @@ import { AuthService } from '../services/auth.service';
 
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
-    private authToken: string;
+    private authToken: string = localStorage.getItem('authtoken');
 
     constructor(private authService: AuthService) { }
 

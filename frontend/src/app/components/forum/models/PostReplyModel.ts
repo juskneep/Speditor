@@ -1,4 +1,4 @@
-export class PostReply {
+export class PostReplyModel {
     public content: string;
     public created: Date;
     public userId: string;

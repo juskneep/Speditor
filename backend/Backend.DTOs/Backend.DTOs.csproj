@@ -14,4 +14,10 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Freight\DTOs\" />
+    <Folder Include="Freight\ViewModels\" />
+    <Folder Include="User\ViewModels\" />
+  </ItemGroup>
+
 </Project>

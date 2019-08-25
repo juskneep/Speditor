@@ -16,6 +16,9 @@ namespace Backend.WebApi
             CreateMap<User, UserRegisterDTO>();
             CreateMap<UserRegisterDTO, User>();
             CreateMap<UserLoginDTO, User>();
+            CreateMap<ForumDTO, Forum>();
+            CreateMap<Forum, ForumDTO>();
+            CreateMap<Forum, ForumViewModel>();
         }
     }
 }

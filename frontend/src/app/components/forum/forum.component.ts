@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ForumModel } from './models/ForumModel';
 import { ForumService } from '../../core/services/forum.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-forum',
@@ -12,22 +13,31 @@ export class ForumComponent implements OnInit {
 
 
   constructor(
-    private forumService: ForumService
+    private forumService: ForumService,
+    private toastrService: ToastrService
   ) { }
 
   forumThemes: ForumModel[] = [];
 
   async ngOnInit() {
-    //this.forumThemes = await this.forumService.getAllPosts();
+    this.forumThemes = await this.forumService.getAllPosts();
+    console.log(this.forumThemes);
   }
 
   onSubmit() {
+    console.log(this.forumThemes);
     this.forumService.createPost().subscribe(
       (req: any) => {
-        if (req) { console.log(req); }
+        this.toastrService.success('Successfully created forum');
       },
       (err: any) => {
-        if (err) { console.log({"Fuck error": err}); }
+        console.log(err);
+        this.toastrService.error('Forum was not created by reasons');
       });
   }
+
+  getForums() {
+    this.forumService.getAllPosts().then(x => console.log(x));
+  }
+
 }

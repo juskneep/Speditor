@@ -54,7 +54,7 @@ export class AuthService {
     }
   }
 
-  /*register(body: RegisterModel) {
+  /*register() {
     return this.http.post(`${this.baseUrl}/register`, body)
   }*/
 
@@ -69,7 +69,7 @@ export class AuthService {
   logout() {
     localStorage.clear();
     //this.store.dispatch(new Deauthenticate());
-    this.toastr.success('Logout successful!')
+    this.toastr.success('Logout successful!');
     this.router.navigate(['/']);
   }
 
