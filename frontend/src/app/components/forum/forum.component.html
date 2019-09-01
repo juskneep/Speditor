@@ -1,23 +1,43 @@
-<form [formGroup]="forumService.formModel" class="col-md-5" autocomplete="off" (submit)="onSubmit()">
-    <div class="form-group">
-        <label for="Title">Title</label>
-        <input type="text" class="form-control" id="Title" placeholder="Title" formControlName="Title">
-    </div>
-    <div class="form-group">
-        <label for="Description">Description</label>
-        <input type="text" class="form-control" id="Description" placeholder="Description" formControlName="Description">
-    </div>
-    <div class="form-group">
-        <label for="Created">Created</label>
-        <input type="date" class="form-control" id="Created" placeholder="Created" formControlName="Created">
-    </div>
-    <div class="form-group">
-        <label for="ImageUrl">ImageUrl</label>
-        <input type="email" class="form-control" id="ImageUrl" placeholder="ImageUrl" formControlName="ImageUrl">
-    </div>
-    <div class="form-row">
-        <div class="form-group col-md-8 offset-md-2">
-            <button type="submit" class="btn btn-lg btn-block" [disabled]="!forumService.formModel.valid">Create</button>
+<main role="main" class="container">
+    <div class="d-flex align-items-center p-3 my-3 bg-purple rounded shadow-sm">
+        <div class="lh-100">
+            <h6 class="mb-0 lh-100">Forum</h6>
         </div>
     </div>
-</form>
+
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Forum Themes</h6>
+        <div *ngFor="let forum of forumThemes">
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">{{forum.title}}</strong>
+                    {{forum.description}}                    
+                </p>
+                <div class="button-holder float-right">
+                        <a href="/forum/posts/?id=@forum.Id" class="btn btn-warning">Enter</a>
+                </div>
+            </div>
+        </div>
+        <small class="d-block text-right mt-3">
+            <a href="#">All updates</a>
+        </small>
+    </div>
+
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Recent Themes</h6>
+        <div *ngFor="let forum of recentForums">
+        <div class="media text-muted pt-3">
+            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <strong class="text-gray-dark">{{forum.title}}</strong>
+                </div>
+                <span class="d-block">{{forum.description}}</span>
+            </div>
+            <div class="button-holder float-right">
+                    <a href="/forum/posts/?id=@forum.Id" class="btn btn-warning">Enter</a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+</main>

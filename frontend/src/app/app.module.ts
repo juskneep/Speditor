@@ -16,6 +16,13 @@ import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
 import { ToastrModule } from 'ngx-toastr';
 import { JwtInterceptor } from './core/helpers/jwt-interceptor';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule,
+  MatDividerModule } from '@angular/material';
+import { CreateComponent } from './components/forum/create/create.component';
+import { PostsComponent } from './components/forum/posts/posts.component';
+import { PostRepliesComponent } from './components/forum/posts/post-replies/post-replies.component';
+import { PostCreateComponent } from './components/forum/posts/post-create/post-create.component';
+import { PostRepliesCreateComponent } from './components/forum/posts/post-replies/post-replies-create/post-replies-create.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +32,11 @@ import { JwtInterceptor } from './core/helpers/jwt-interceptor';
     RegisterComponent,
     HomeComponent,
     ForumComponent,
+    CreateComponent,
+    PostsComponent,
+    PostRepliesComponent,
+    PostCreateComponent,
+    PostRepliesCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,15 +52,29 @@ import { JwtInterceptor } from './core/helpers/jwt-interceptor';
       }
     }),
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatDividerModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule,
+    MatButtonModule
   ],
-  providers: [ 
+  exports: [
+    MatDividerModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule,
+    MatButtonModule
+  ],
+  providers: [
     {
-    provide : HTTP_INTERCEPTORS,
-    useClass: JwtInterceptor,
-    multi   : true,
-  },
-],
+      provide: HTTP_INTERCEPTORS,
+      useClass: JwtInterceptor,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

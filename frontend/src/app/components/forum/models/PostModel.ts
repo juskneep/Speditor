@@ -1,4 +1,4 @@
-import { PostReply } from './PostReply';
+import { PostReplyModel } from './PostReplyModel';
 
 export class PostModel {
     public id: string;
@@ -7,5 +7,5 @@ export class PostModel {
     public created: Date;
     public userId: string;
     public forumId: string;
-    public postReply: PostReply[];
+    public postReply: PostReplyModel[];
 }

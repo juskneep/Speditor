@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatTableDataSource} from '@angular/material/table';
 import { ForumModel } from './models/ForumModel';
 import { ForumService } from '../../core/services/forum.service';
 import { ToastrService } from 'ngx-toastr';
@@ -10,18 +12,21 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ForumComponent implements OnInit {
 
-
-
   constructor(
     private forumService: ForumService,
     private toastrService: ToastrService
   ) { }
 
   forumThemes: ForumModel[] = [];
+  recentForums: ForumModel[] = [];
 
   async ngOnInit() {
     this.forumThemes = await this.forumService.getAllPosts();
-    console.log(this.forumThemes);
+    this.recentForums = this.forumThemes.sort(function (date1, date2) {
+      if (date1 > date2) return 1;
+      if (date1 < date2) return -1;
+      return 0;
+    }).slice(0, 3);
   }
 
   onSubmit() {
